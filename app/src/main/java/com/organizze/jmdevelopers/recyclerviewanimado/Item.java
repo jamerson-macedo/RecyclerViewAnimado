@@ -15,10 +15,11 @@ public class Item {
         this.userfoto = userfoto;
     }
 
-    public Item(String conteudo, String titulo, String data) {
+    public Item(String conteudo, String titulo,String data,int foto) {
         this.conteudo = conteudo;
         this.titulo = titulo;
         this.data = data;
+        this.userfoto=foto;
     }
 
     public String getConteudo() {

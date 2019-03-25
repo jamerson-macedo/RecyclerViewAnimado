@@ -10,11 +10,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.zip.Inflater;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
     public Context mcontext;
     public ArrayList<Item> mlista;
+
+    public ItemAdapter(Context mcontext, ArrayList<Item> mlista) {
+        this.mcontext = mcontext;
+        this.mlista = mlista;
+    }
 
     @NonNull
     @Override
@@ -44,7 +52,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
 
     public class ItemViewHolder extends RecyclerView.ViewHolder{
         // recuperar os ids
-        ImageView imagem_user;
+        CircleImageView imagem_user;
         TextView conteudo,data,titulo;
 
 

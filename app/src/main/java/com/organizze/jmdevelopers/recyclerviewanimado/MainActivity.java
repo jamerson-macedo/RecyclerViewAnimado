@@ -10,7 +10,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private List<Item> items;
+    private ArrayList<Item> items;
     private ItemAdapter adapter;
 
 
@@ -20,8 +20,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         recyclerView=findViewById(R.id.recyclerview);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
         items=new ArrayList<>();
-        
+
+        items.add(new Item("sdnfsdnifid","nsdjnfsdjfn","mkfsfdk",R.drawable.maxresdefault));
+        // adapter
+        adapter=new ItemAdapter(this,items);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
 }
