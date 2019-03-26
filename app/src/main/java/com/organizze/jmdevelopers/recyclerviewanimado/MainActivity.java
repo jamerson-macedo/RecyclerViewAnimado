@@ -31,16 +31,25 @@ public class MainActivity extends AppCompatActivity {
 
         items=new ArrayList<>();
 
-        items.add(new Item("NJDSFNJOFDSANDFSNJSDFAJNODFASNJODFJNOSFDJNOSDAFNOJDFSONJFSDANJASFDOJSDA","jamerson macedo","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("NJDSFNJOFDSANDFSNJSDFAJNODFASNJODFJNOSFDJNOSDAFNOJDFSONJFSDANJASFDOJSDA","Jamerson Macedo","01-09-1997",R.drawable.maxresdefault));
         items.add(new Item("bom dia","FDFGSGSDFFSDFFGGFFSD","01-09-1997",R.drawable.maxresdefault));
-        items.add(new Item("joao","ndfssdf","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("asdmfiasofmasdoifmasdoifmasdoifmasdiofmasdiofmasdiomfasdiofm","ndfssdf","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("sdnfsdnifid","Macedo","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("sdnfsdnifid","Arajo ","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("sdnfsdnifid","idsoasodos sobre asidnsiad","01-09-1997",R.drawable.maxresdefault));
         items.add(new Item("sdnfsdnifid","nsdjnfsdjfn","01-09-1997",R.drawable.maxresdefault));
         items.add(new Item("sdnfsdnifid","nsdjnfsdjfn","01-09-1997",R.drawable.maxresdefault));
         items.add(new Item("sdnfsdnifid","nsdjnfsdjfn","01-09-1997",R.drawable.maxresdefault));
         items.add(new Item("sdnfsdnifid","nsdjnfsdjfn","01-09-1997",R.drawable.maxresdefault));
-        items.add(new Item("sdnfsdnifid","nsdjnfsdjfn","01-09-1997",R.drawable.maxresdefault));
-        items.add(new Item("sdnfsdnifid","nsdjnfsdjfn","01-09-1997",R.drawable.maxresdefault));
-        items.add(new Item("sdnfsdnifid","nsdjnfsdjfn","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("NJDSFNJOFDSANDFSNJSDFAJNODFASNJODFJNOSFDJNOSDAFNOJDFSONJFSDANJASFDOJSDA","Jamerson Macedo","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("NJDSFNJOFDSANDFSNJSDFAJNODFASNJODFJNOSFDJNOSDAFNOJDFSONJFSDANJASFDOJSDA","Jamerson Macedo","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("NJDSFNJOFDSANDFSNJSDFAJNODFASNJODFJNOSFDJNOSDAFNOJDFSONJFSDANJASFDOJSDA","Jamerson Macedo","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("NJDSFNJOFDSANDFSNJSDFAJNODFASNJODFJNOSFDJNOSDAFNOJDFSONJFSDANJASFDOJSDA","Jamerson Macedo","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("NJDSFNJOFDSANDFSNJSDFAJNODFASNJODFJNOSFDJNOSDAFNOJDFSONJFSDANJASFDOJSDA","Jamerson Macedo","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("NJDSFNJOFDSANDFSNJSDFAJNODFASNJODFJNOSFDJNOSDAFNOJDFSONJFSDANJASFDOJSDA","Jamerson Macedo","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("NJDSFNJOFDSANDFSNJSDFAJNODFASNJODFJNOSFDJNOSDAFNOJDFSONJFSDANJASFDOJSDA","Jamerson Macedo","01-09-1997",R.drawable.maxresdefault));
+        items.add(new Item("NJDSFNJOFDSANDFSNJSDFAJNODFASNJODFJNOSFDJNOSDAFNOJDFSONJFSDANJASFDOJSDA","Jamerson Macedo","01-09-1997",R.drawable.maxresdefault));
+
         // adapter
         adapter=new ItemAdapter(this,items);
         recyclerView.setAdapter(adapter);
