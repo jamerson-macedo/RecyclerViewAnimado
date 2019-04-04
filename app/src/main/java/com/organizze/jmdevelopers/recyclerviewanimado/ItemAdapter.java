@@ -20,6 +20,13 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
     public Context mcontext;
     public ArrayList<Item> mlista;
+    public boolean isdark;
+
+    public ItemAdapter(Context mcontext, ArrayList<Item> mlista, boolean isdark) {
+        this.mcontext = mcontext;
+        this.mlista = mlista;
+        this.isdark = isdark;
+    }
 
     public ItemAdapter(Context mcontext, ArrayList<Item> mlista) {
         this.mcontext = mcontext;
@@ -70,6 +77,20 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
             conteudo=itemView.findViewById(R.id.conteudo);
             data=itemView.findViewById(R.id.data);
             titulo=itemView.findViewById(R.id.titulo);
+
+            /// verificar se é preto
+            if(isdark){
+                setbg();
+
+            }
+
+
+        }
+        private void setbg(){
+            relativeLayout.setBackgroundResource(R.drawable.cardbgpreto);
+
+
+
         }
     }
 
